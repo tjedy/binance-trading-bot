@@ -13,7 +13,7 @@ class Footer extends React.Component {
   componentDidMount() {
     const self = this;
     // Make a request for a user with a given ID
-    axios
+    /*axios
       .get(
         'https://raw.githubusercontent.com/chrisleekr/binance-trading-bot/master/package.json'
       )
@@ -22,7 +22,10 @@ class Footer extends React.Component {
         self.setState({
           currentVersion: response.data.version
         });
-      });
+      });*/
+    self.setState({
+      currentVersion: '1.0.0'
+    });
   }
 
   render() {
@@ -43,7 +46,7 @@ class Footer extends React.Component {
           <div className='footer-column'>
             Latest Version:
             <a
-              href='https://github.com/chrisleekr/binance-trading-bot/releases'
+              href=''
               target='_blank'
               className='ml-1'
               rel='noreferrer'>
