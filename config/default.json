@@ -1,6 +1,6 @@
 {
   "mode": "test",
-  "tz": "Australia/Melbourne",
+  "tz": "Asia/Jakarta",
   "appName": "Binance Trading Bot",
   "demoMode": false,
   "binance": {
@@ -60,7 +60,12 @@
     "trailingTrade": {
       "enabled": true,
       "cronTime": "* * * * * *",
-      "symbols": ["BTCUSDT", "ETHUSDT", "ETHBTC", "XRPBTC"],
+      "symbols": [
+        "BTCUSDT",
+        "ETHUSDT",
+        "ETHBTC",
+        "XRPBTC"
+      ],
       "botOptions": {
         "authentication": {
           "lockList": true,
